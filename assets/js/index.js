@@ -1,25 +1,6 @@
 $(document).ready(() => {
 
-	$('.logo__inner').css('transform', 'translate(0)');
-	if (parseInt($('body').width()) > 970) {
-		$('.nav__inner').css('transform', 'translate(0)');
-	}
-
 	let mechanism = $('.mechanism__item');
-	mechanismMove();
-	function mechanismMove() {
-		for (const i in mechanism) {
-			if (Object.hasOwnProperty.call(mechanism, i)) {
-				const gear = mechanism[i];
-				if (i % 2 === 0) {
-					$(gear).css('transform', 'rotate(360deg');
-				}
-				if (i % 2 !== 0) {
-					$(gear).css('transform', 'rotate(-360deg');
-				}
-			}
-		}
-	}
 
 	let counter = 360;
 	$(window).scroll(function () {
