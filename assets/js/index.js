@@ -1,7 +1,6 @@
 $(document).ready(() => {
 
 	let mechanism = $('.mechanism__item');
-
 	let counter = 360;
 	$(window).scroll(function () {
 		setTimeout(() => {
