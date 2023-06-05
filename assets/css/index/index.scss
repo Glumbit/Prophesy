@@ -37,6 +37,7 @@
 	border-radius: 0 0 50px 0;
 	animation-name: logoShow;
 	animation-duration: 1000ms;
+	animation-delay: 200ms;
 }
 
 @keyframes logoShow {
@@ -82,21 +83,23 @@
 }
 
 .mechanism__item {
-	color: inherit;
-	font-size: 60px;
-	transition: transform 1s ease-in-out;
 	position: relative;
-	margin: 0 -2px;
+	width: 60px;
+	height: 60px;
+	fill: #e9e7e7;
+	transition: transform 1s ease-in-out;
+	margin: 0 -5px;
 
 	&:nth-child(even) {
 		animation-name: machanismMove;
 		animation-duration: 1000ms;
-		// animation-delay: 1000ms;
+		animation-delay: 200ms;
 	}
 
 	&:nth-child(odd) {
 		animation-name: machanismMoveNegative;
 		animation-duration: 1000ms;
+		animation-delay: 200ms;
 	}
 }
 
@@ -150,6 +153,7 @@
 	border-radius: 0 0 0 50px;
 	animation-name: navShow;
 	animation-duration: 1000ms;
+	animation-delay: 200ms;
 }
 
 @keyframes navShow {
@@ -318,14 +322,14 @@
 	position: relative;
 	width: 30%;
 	transition: transform 1.0s ease-in-out;
-}
 
-.aside__item:first-child {
-	transform: translateX(-50%);
-}
+	&:first-child {
+		transform: translateX(-50%);
+	}
 
-.aside__item:last-child {
-	transform: translateX(50%);
+	&:last-child {
+		transform: translateX(50%);
+	}
 }
 
 .about__inner {
@@ -442,24 +446,32 @@
 }
 
 .works__item {
-	height: 300px;
+	max-height: 300px;
 	position: relative;
 	background-color: #0c0b2a;
 	border-radius: 30px;
-}
+	overflow: hidden;
 
-.works__item img {
-	height: 100%;
-	border-radius: inherit;
-	transition: opacity 0.5s;
-}
+	img {
+		height: 100%;
+		object-fit: cover;
+		border-radius: inherit;
+		transition: opacity 0.5s;
+	}
 
-.works__item:hover img {
-	opacity: 0.4;
-}
+	&:hover {
+		img {
+			opacity: 0.4;
+		}
 
-.works__item:hover .works__text {
-	opacity: 1;
+		.works__text {
+			opacity: 1;
+		}
+	}
+
+	&:nth-child(n+3) {
+		display: none;
+	}
 }
 
 .works__text {
@@ -475,11 +487,11 @@
 	border-radius: 40px;
 }
 
-.works__text>*:first-child {
+.subtitle_works {
 	margin-bottom: 10px;
 }
 
-.works__text>*:nth-child(2) {
+.regular-works {
 	margin-bottom: 30px;
 }
 
@@ -487,16 +499,16 @@
 	font-size: 2rem;
 }
 
-.btn_works {
+.btn__works {
 	padding: 10px 20px;
 	margin: 0 20px;
 	border-radius: 40px;
 	text-transform: none;
-}
 
-.btn_works:hover {
-	padding: 10px 40px;
-	margin: 0;
+	&:hover {
+		padding: 10px 40px;
+		margin: 0;
+	}
 }
 
 /* Tariff */
@@ -725,6 +737,18 @@
 	cursor: pointer;
 }
 
+.questions__item--visible {
+
+	.arrow-questions {
+		transform: rotate(180deg) translateY(50%);
+	}
+
+	.questions__details {
+		max-height: 100px;
+		padding: 20px;
+	}
+}
+
 .questions__title {
 	padding: 20px;
 	padding-right: 90px;
@@ -753,14 +777,13 @@
 	font-size: 1.7rem;
 }
 
-.rotate {
-	transform: translateY(-50%) rotate(180deg);
-}
-
 .questions__details {
-	padding: 20px;
+	padding: 0 20px;
 	border-radius: 0 0 40px 40px;
 	position: relative;
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height 500ms, padding 500ms;
 }
 
 /* footer */
