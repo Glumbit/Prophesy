@@ -95,18 +95,10 @@ body {
   font-weight: 500;
   text-transform: uppercase;
 }
-
 .btn:hover {
   padding: 20px 50px;
   margin: 0;
 }
-
-.background {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-}
-
-.background img {
-  height: 100%;
+.btn:visited {
+  color: var(--colorBlue);
 }/*# sourceMappingURL=common.css.map */

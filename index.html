@@ -21,7 +21,12 @@
 	<header class="header">
 		<div class="headeer__inner">
 			<a href="#intro" class="logo">
-				<div class="logo__inner"><i class="fa-solid fa-scroll"></i>Prophesy</div>
+				<div class="logo__inner">
+					<div class="logo__img">
+						<img src="assets/images/header/scroll.webp" alt="">
+					</div>
+					<p>Prophesy</p>
+				</div>
 			</a>
 			<div class="mechanism">
 				<div class="mechanism__item">
@@ -63,20 +68,16 @@
 				<use xlink:href="assets/svg/common.svg#arrow"></use>
 			</svg></a>
 		<section class="intro" id="intro">
-			<div class="background_intro background"><img src="assets/images/intro/introBackground.webp"
-					alt="звёзды, звёздное небо, prophesy"></div>
 			<div class="intro__inner">
 				<div class="intro__img"><img src="assets/images/intro/intro.webp"
 						alt="руки, звёзды, звёздное небо, prophesy"></div>
 				<div class="intro__text title">
-					<p class="title_intro title">Хочешь дизайн из своих снов?</p>
+					<p class="title title-intro">Хочешь дизайн из своих снов?</p>
 					<p class="subtitle">Тогда ты попал в нужное место</p><a href="#order" class="btn">Заказать</a>
 				</div>
 			</div>
 		</section>
 		<section class="about" id="about">
-			<div class="background"><img src="assets/images/about/aboutBackground.webp" alt="покрашенное, Prophesy">
-			</div>
 			<div class="aside"><img class="aside__item _load" id="aside__item-left" src="assets/images/about/atlas.webp"
 					alt="боковый спецэфект для сайта Prophesy"> <img class="aside__item _load" id="aside__item-right"
 					src="assets/images/about/atlas.webp" alt="боковый спецэфект для сайта Prophesy"></div>
@@ -305,14 +306,31 @@
 						</select><textarea class="order__item" name="additional"
 							placeholder="Пожелания"></textarea><button class="btn" type="submit">отправить</button>
 					</form>
-					<div class="order__contacts">
-						<div class="subtitle">Если появились вопросы свяжитесь с нами</div>
-						<div class="order__contact contact regular">Телефон<br><span>+7-913-279-55-48</span></div>
-						<div class="order__contact contact regular">Электорнная
-							почта<br><span>footbolka46@gmail.com</span></div>
-						<div class="order__contact contact regular">Социальные сети и мессенджеры<br><span><a
-									href="#"><i class="fa-brands fa-vk"></i></a><a href="https://vk.com/gasabaev"><i
-										class="fa-brands fa-square-whatsapp"></i></a></span></div>
+					<div class="contacts contacts-order">
+						<p class="subtitle">Если появились вопросы свяжитесь с нами</p>
+						<div class="contact contacts__item-order regular">
+							<p>Телефон</p>
+							<p class="contacts__data">+7-913-279-55-48</p>
+						</div>
+						<div class="contact contacts__item-order regular">
+							<p>Электорнная почта</p>
+							<p class="contacts__data">footbolka46@gmail.com</p>
+						</div>
+						<div class="contact contacts__item-order regular">
+							<p>Социальные сети и мессенджеры</p>
+							<div class="order__links">
+								<a class="order__link" href="#">
+									<svg>
+										<use xlink:href="assets/svg/contacts.svg#vk"></use>
+									</svg>
+								</a>
+								<a class="order__link" href="https://vk.com/gasabaev">
+									<svg>
+										<use xlink:href="assets/svg/contacts.svg#telegram"></use>
+									</svg>
+								</a>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -323,7 +341,9 @@
 					<p class="title-center title">Вопросы</p>
 					<div class="questions__item">
 						<div class="questions__title subtitle">Будет ли предосьтавлена скидка при наличии макета сайта?
-							<div class="arrow-questions"><i class="fa-solid fa-arrow-down"></i></div>
+							<div class="arrow-questions"><svg>
+									<use xlink:href="assets/svg/common.svg#arrow"></use>
+								</svg></div>
 						</div>
 						<div class="questions__details regular">
 							При наличии макета сайта предоставляется скидка в 30% поскольку делать часть работы уже
@@ -332,7 +352,9 @@
 					</div>
 					<div class="questions__item">
 						<div class="questions__title subtitle">Чем база знаний отличается от интернет магазина?<div
-								class="arrow-questions"><i class="fa-solid fa-arrow-down"></i></div>
+								class="arrow-questions"><svg>
+									<use xlink:href="assets/svg/common.svg#arrow"></use>
+								</svg></div>
 						</div>
 						<div class="questions__details regular">В первую очередь целями: для базы знаний это показать
 							контент который нельзя продать, а интернет магазин размещает на своём сайте только то что
@@ -341,7 +363,9 @@
 					</div>
 					<div class="questions__item">
 						<div class="questions__title subtitle">Какие сроки создания сайта?<div class="arrow-questions">
-								<i class="fa-solid fa-arrow-down"></i>
+								<svg>
+									<use xlink:href="assets/svg/common.svg#arrow"></use>
+								</svg>
 							</div>
 						</div>
 						<div class="questions__details regular">Сроки зависят от сложности поставленных задач, и типа
@@ -351,14 +375,18 @@
 					</div>
 					<div class="questions__item">
 						<div class="questions__title subtitle">Будет ли у сайта мобильная версия? <div
-								class="arrow-questions"><i class="fa-solid fa-arrow-down"></i></div>
+								class="arrow-questions"><svg>
+									<use xlink:href="assets/svg/common.svg#arrow"></use>
+								</svg></div>
 						</div>
 						<div class="questions__details regular">Все разработанные нами сайты обладают
 							адаптивоной(мобильной) версией.</div>
 					</div>
 					<div class="questions__item">
 						<div class="questions__title subtitle">Какие технологии применяются для создания сайтов?<div
-								class="arrow-questions"><i class="fa-solid fa-arrow-down"></i></div>
+								class="arrow-questions"><svg>
+									<use xlink:href="assets/svg/common.svg#arrow"></use>
+								</svg></div>
 						</div>
 						<div class="questions__details regular">Для создания сайтов мы используем такеи технологии как:
 							HTML, CSS, Java Script, PHP. Так же для более быстрого сощздания сайтов могут применятся
@@ -367,7 +395,9 @@
 					</div>
 					<div class="questions__item">
 						<div class="questions__title subtitle">Сколько длится обслуживание сайта?<div
-								class="arrow-questions"><i class="fa-solid fa-arrow-down"></i></div>
+								class="arrow-questions"><svg>
+									<use xlink:href="assets/svg/common.svg#arrow"></use>
+								</svg></div>
 						</div>
 						<div class="questions__details regular">Обслуживание сайта длится 2 недели, в течении которых
 							будут исправляться баги и вноситься корректировоки</div>
@@ -379,19 +409,34 @@
 	<footer class="footer">
 		<div class="footer__part">
 			<div class="footer__logo subtitle">
-				<i class="fa-solid fa-scroll"></i>Prophesy
-			</div>
-			<div class="footer-contacts contacts">
-				<div class="footer-contact contact regular">
-					<p>Телефон</p><a class="footer-contact__link" href="tel:+79132795548">+7-913-279-55-48</a>
+				<div class="logo__img">
+					<img src="assets/images/header/scroll.webp" alt="">
 				</div>
-				<div class="footer-contact contact regular">Электорнная почта<br><a class="footer-contact__link"
-						href="footbolka46@gmail.com">footbolka46@gmail.com</a></div>
-				<div class="footer-contact contact regular">
-					Социальные сети и мессенджеры
-					<br><a><i class="fa-brands fa-vk"></i></a>
-					<a><i class="fa-brands fa-square-whatsapp"></i></a>
-					<a><i class="fa-brands fa-square-instagram"></i></a>
+				<p>Prophesy</p>
+			</div>
+			<div class="contacts contacts-footer">
+				<div class="contact-footer contact regular">
+					<p>Телефон</p>
+					<a class="footer-contact__link" href="tel:+79132795548">+7-913-279-55-48</a>
+				</div>
+				<div class="contact-footer contact regular">
+					<p>Электорнная почта</p>
+					<a class="footer-contact__link" href="footbolka46@gmail.com">footbolka46@gmail.com</a>
+				</div>
+				<div class="contact-footer contact regular">
+					<p>Социальные сети и мессенджеры</p>
+					<div class="footer__links">
+						<a class="contact__link-footer" href="https://vk.com/gasabaev">
+							<svg>
+								<use xlink:href="assets/svg/contacts.svg#vk"></use>
+							</svg>
+						</a>
+						<a class="contact__link-footer" href="https://vk.com/gasabaev">
+							<svg>
+								<use xlink:href="assets/svg/contacts.svg#telegram"></use>
+							</svg>
+						</a>
+					</div>
 				</div>
 			</div>
 		</div>
