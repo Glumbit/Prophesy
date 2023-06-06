@@ -8,13 +8,12 @@
 	<meta name="description"
 		content="Prophesy - это сайт на катором вы можете заказать сайт который вам нужен для бизнеса или личного использования">
 	<meta name="keywords" content="html, css, js, вёрстка, сайты, лендинги, недорого, качественно, бизнес, личный">
+	<link rel="stylesheet" href="./assets/css/variables/variables.css">
 	<link rel="stylesheet" href="./assets/css/reboot/reboot.css">
 	<link rel="stylesheet" href="./assets/css/common/common.css">
 	<link rel="stylesheet" href="./assets/css/index/index.css">
 	<link rel="shortcut icon" href="./assets/images/header/ico.ico" type="image/x-icon">
 	<script src="https://kit.fontawesome.com/0d815946f6.js" crossorigin="anonymous"></script>
-	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script> -->
-	<!-- <script src="./assets/js/index.js"></script> -->
 	<title>Prophesy | создание сайтов лендингов за разумную цену</title>
 </head>
 
@@ -25,8 +24,6 @@
 				<div class="logo__inner"><i class="fa-solid fa-scroll"></i>Prophesy</div>
 			</a>
 			<div class="mechanism">
-				<div class="background_mechanism background"><img src="assets/images/header/gears.webp"
-						alt="Механизм, задний фон, prophesy"></div>
 				<div class="mechanism__item">
 					<svg>
 						<use xlink:href="assets/svg/header.svg#gear"></use>
@@ -62,7 +59,9 @@
 						class="burger__line"></span></button></div>
 		</div>
 	</header>
-	<main><a href="#intro" class="arrowup"><i class="fa-solid fa-arrow-down"></i></a>
+	<main><a href="#intro" class="arrowup"><svg>
+				<use xlink:href="assets/svg/common.svg#arrow"></use>
+			</svg></a>
 		<section class="intro" id="intro">
 			<div class="background_intro background"><img src="assets/images/intro/introBackground.webp"
 					alt="звёзды, звёздное небо, prophesy"></div>
@@ -290,8 +289,6 @@
 			</div>
 		</section>
 		<section class="order" id="order">
-			<div class="background"><img src="assets/images/order/orderBackground.webp" alt="Планшет, звёзды Prophesy">
-			</div>
 			<div class="container">
 				<div class="order__inner">
 					<form action="sendmail.php" method="POST" class="order__form">

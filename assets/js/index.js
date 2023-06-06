@@ -1,34 +1,30 @@
 const mechanism = document.querySelectorAll('.mechanism__item');
-let counter = 360;
+let counter = 330;
+mechanismRotate(counter)
 
-window.addEventListener("wheel", mechanismRotate);
+window.addEventListener("wheel", mechanismDirection);
 
-function mechanismRotate(event) {
+function mechanismDirection(event) {
 	if (event.deltaY > 0) {
 		counter += 10;
-		for (const key in mechanism) {
-			if (Object.hasOwnProperty.call(mechanism, key)) {
-				const mechanismEl = mechanism[key];
-				if (key % 2 !== 0) {
-					mechanismEl.style.transform = `rotate(${counter}deg`;
-				}
-				if (key % 2 === 0) {
-					mechanismEl.style.transform = `rotate(-${counter}deg`;
-				}
-			}
-		}
+		mechanismRotate(counter)
 	}
 	else {
 		counter -= 10;
-		for (const key in mechanism) {
-			if (Object.hasOwnProperty.call(mechanism, key)) {
-				const mechanismEl = mechanism[key];
-				if (key % 2 !== 0) {
-					mechanismEl.style.transform = `rotate(${counter}deg`;
-				}
-				if (key % 2 === 0) {
-					mechanismEl.style.transform = `rotate(-${counter}deg`;
-				}
+		mechanismRotate(counter)
+	}
+}
+
+function mechanismRotate(counter) {
+	console.log(counter);
+	for (const key in mechanism) {
+		if (Object.hasOwnProperty.call(mechanism, key)) {
+			const mechanismEl = mechanism[key];
+			if (key % 2 !== 0) {
+				mechanismEl.style.transform = `rotate(${counter}deg`;
+			}
+			if (key % 2 === 0) {
+				mechanismEl.style.transform = `rotate(-${counter}deg`;
 			}
 		}
 	}
