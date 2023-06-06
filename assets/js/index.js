@@ -1,17 +1,17 @@
 const mechanism = document.querySelectorAll('.mechanism__item');
 let counter = 330;
-mechanismRotate(counter)
+mechanismRotate(counter);
 
 window.addEventListener("wheel", mechanismDirection);
 
 function mechanismDirection(event) {
 	if (event.deltaY > 0) {
 		counter += 10;
-		mechanismRotate(counter)
+		mechanismRotate(counter);
 	}
 	else {
 		counter -= 10;
-		mechanismRotate(counter)
+		mechanismRotate(counter);
 	}
 }
 
@@ -78,7 +78,7 @@ const stagesAnim = new IntersectionObserver(
 					if (Object.hasOwnProperty.call(stagesItems, i)) {
 						const stagesItem = stagesItems[i];
 						setTimeout(() => {
-							stagesItem.style.transform = "translate(0)"
+							stagesItem.style.transform = "translate(0)";
 						}, 100)
 					}
 				}
@@ -100,10 +100,10 @@ const questionsItems = document.querySelectorAll('.questions__item');
 for (const i in questionsItems) {
 	if (Object.hasOwnProperty.call(questionsItems, i)) {
 		const questionsItem = questionsItems[i];
-		questionsItem.addEventListener("click", questionShow.bind(null, questionsItem))
+		questionsItem.addEventListener("click", questionShow.bind(null, questionsItem));
 	}
 }
 
 function questionShow(questionItem) {
-	questionItem.classList.toggle("questions__item--visible")
+	questionItem.classList.toggle("questions__item--visible");
 }

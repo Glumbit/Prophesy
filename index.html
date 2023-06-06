@@ -292,46 +292,55 @@
 		<section class="order" id="order">
 			<div class="container">
 				<div class="order__inner">
-					<form action="sendmail.php" method="POST" class="order__form">
-						<div class="subtitle">Если появилось желание заказать сайт именно у нас заполните данные и мы
-							свяжемся с вами</div><input class="order__item" type="text" name="name" placeholder="Имя*"
-							required> <input class="order__item" type="email" name="email" placeholder="Email*"
-							required> <input class="order__item" type="tel" name="phone" placeholder="Телефон*"
-							required> <input class="order__item" type="text" name="theme" placeholder="Тематика"><select
-							class="order__item" name="type" title="Тип сайта" required>
-							<option value="default" disabled="disabled" selected="selected">Выберите тип сайта*</option>
-							<option value="landing">Лэндинг</option>
-							<option value="kdb">База знаний</option>
-							<option value="ecomerce">Интернет магазин</option>
-						</select><textarea class="order__item" name="additional"
-							placeholder="Пожелания"></textarea><button class="btn" type="submit">отправить</button>
-					</form>
-					<div class="contacts contacts-order">
-						<p class="subtitle">Если появились вопросы свяжитесь с нами</p>
-						<div class="contact contacts__item-order regular">
-							<p>Телефон</p>
-							<p class="contacts__data">+7-913-279-55-48</p>
-						</div>
-						<div class="contact contacts__item-order regular">
-							<p>Электорнная почта</p>
-							<p class="contacts__data">footbolka46@gmail.com</p>
-						</div>
-						<div class="contact contacts__item-order regular">
-							<p>Социальные сети и мессенджеры</p>
-							<div class="order__links">
-								<a class="order__link" href="#">
-									<svg>
-										<use xlink:href="assets/svg/contacts.svg#vk"></use>
-									</svg>
-								</a>
-								<a class="order__link" href="https://vk.com/gasabaev">
-									<svg>
-										<use xlink:href="assets/svg/contacts.svg#telegram"></use>
-									</svg>
-								</a>
+					<div class="order__col">
+						<p class="subtitle subtitle-order" id="subtittle-form">Если появилось желание заказать сайт
+							именно у нас заполните
+							данные и мы
+							свяжемся с вами</p>
+						<form action="sendmail.php" method="POST" class="order__form">
+							<input class="order__item" type="text" name="name" placeholder="Имя*" required> <input
+								class="order__item" type="email" name="email" placeholder="Email*" required> <input
+								class="order__item" type="tel" name="phone" placeholder="Телефон*" required> <input
+								class="order__item" type="text" name="theme" placeholder="Тематика"><select
+								class="order__item" name="type" title="Тип сайта" required>
+								<option value="default" disabled="disabled" selected="selected">Выберите тип сайта*
+								</option>
+								<option value="landing">Лэндинг</option>
+								<option value="kdb">База знаний</option>
+								<option value="ecomerce">Интернет магазин</option>
+							</select><textarea class="order__item" name="additional"
+								placeholder="Пожелания"></textarea><button class="btn" type="submit">отправить</button>
+						</form>
+					</div>
+					<div class="order__col">
+						<p class="subtitle subtitle-order">Если появились вопросы свяжитесь с нами</p>
+						<div class="contacts contacts-order">
+							<div class="contact contacts__item-order regular">
+								<p>Телефон</p>
+								<p class="contacts__data">+7-913-279-55-48</p>
+							</div>
+							<div class="contact contacts__item-order regular">
+								<p>Электорнная почта</p>
+								<p class="contacts__data">footbolka46@gmail.com</p>
+							</div>
+							<div class="contact contacts__item-order regular">
+								<p>Социальные сети и мессенджеры</p>
+								<div class="order__links">
+									<a class="order__link" href="#">
+										<svg>
+											<use xlink:href="assets/svg/contacts.svg#vk"></use>
+										</svg>
+									</a>
+									<a class="order__link" href="https://vk.com/gasabaev">
+										<svg>
+											<use xlink:href="assets/svg/contacts.svg#telegram"></use>
+										</svg>
+									</a>
+								</div>
 							</div>
 						</div>
 					</div>
+
 				</div>
 			</div>
 		</section>
@@ -407,7 +416,7 @@
 		</section>
 	</main>
 	<footer class="footer">
-		<div class="footer__part">
+		<div class="footer__top">
 			<div class="footer__logo subtitle">
 				<div class="logo__img">
 					<img src="assets/images/header/scroll.webp" alt="">
@@ -425,7 +434,7 @@
 				</div>
 				<div class="contact-footer contact regular">
 					<p>Социальные сети и мессенджеры</p>
-					<div class="footer__links">
+					<div class="contact__links contact__links-footer">
 						<a class="contact__link-footer" href="https://vk.com/gasabaev">
 							<svg>
 								<use xlink:href="assets/svg/contacts.svg#vk"></use>
@@ -440,7 +449,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="footer__part title">Все права зашищены</div>
+		<div class="title title-footer">Все права зашищены</div>
 	</footer>
 	<script src="./assets/js/index.js"></script>
 </body>
