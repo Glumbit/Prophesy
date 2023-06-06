@@ -16,7 +16,6 @@ function mechanismDirection(event) {
 }
 
 function mechanismRotate(counter) {
-	console.log(counter);
 	for (const key in mechanism) {
 		if (Object.hasOwnProperty.call(mechanism, key)) {
 			const mechanismEl = mechanism[key];
